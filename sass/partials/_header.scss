@@ -1,0 +1,38 @@
+.encabezado{
+	width:1600px;
+	display:inline;
+	
+	.logo{
+		padding-left:214px;
+	}
+
+	nav{
+		float:right;
+
+		.main-menu{
+
+			li{
+				display:inline;
+			}
+		}
+	}
+
+}
+
+@media #{$desktop} {
+	.logo{
+		padding-left:150px;
+	}
+}
+
+@media #{$tablet} {
+	.logo{
+		padding-left:50px;
+	}
+}
+
+@media #{$smartphone} {
+	.logo{
+		padding-left:0px;
+	}
+}

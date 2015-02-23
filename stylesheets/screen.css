@@ -1,99 +1,342 @@
-/*
-Error: Invalid CSS after "...est:"#cb2027";e": expected "{", was ""
-        on line 10 of /home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/modules/_colors.scss
-        from line 2 of /home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/modules/_all.scss
-        from line 5 of /home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/partials/_base.scss
-        from line 9 of /home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/screen.scss
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-5: 
-6: $azul-facebook:"#44619d";
-7: $rojo-google:"#db412e";
-8: $celeste-twitter:"#24b1d4";
-9: $azul-linkedin:"#2671ae";
-10: $rojo-pinterest:"#cb2027";e
+/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
-Backtrace:
-/home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/modules/_colors.scss:10
-/home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/modules/_all.scss:2
-/home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/partials/_base.scss:5
-/home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/screen.scss:9
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:641:in `block'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:299:in `to_tree'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:20:in `render'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...est:\"#cb2027\";e\": expected \"{\", was \"\"\A         on line 10 of /home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/modules/_colors.scss\A         from line 2 of /home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/modules/_all.scss\A         from line 5 of /home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/partials/_base.scss\A         from line 9 of /home/fmadriaga/Google Drive/Pro/Diseño Web/Templates/trigonum/sass/screen.scss\A \A 5: \A 6: $azul-facebook:\"#44619d\";\A 7: $rojo-google:\"#db412e\";\A 8: $celeste-twitter:\"#24b1d4\";\A 9: $azul-linkedin:\"#2671ae\";\A 10: $rojo-pinterest:\"#cb2027\";e"; }
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*Importa los Partials*/
+/* line 2, ../sass/partials/_reset.scss */
+body a {
+  text-decoration: none;
+}
+
+/*Importa los módulos*/
+/* line 2, ../sass/partials/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+a {
+  background: 0 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+optgroup {
+  font-weight: 700;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 2, ../sass/partials/_normalize.scss */
+td, th {
+  padding: 0;
+}
+
+/* line 1, ../sass/partials/_header.scss */
+.encabezado {
+  width: 1600px;
+  display: inline;
+}
+/* line 5, ../sass/partials/_header.scss */
+.encabezado .logo {
+  padding-left: 214px;
+}
+/* line 9, ../sass/partials/_header.scss */
+.encabezado nav {
+  float: right;
+}
+/* line 14, ../sass/partials/_header.scss */
+.encabezado nav .main-menu li {
+  display: inline;
+}
+
+@media only screen and (min-width: 1500px) {
+  /* line 23, ../sass/partials/_header.scss */
+  .logo {
+    padding-left: 150px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  /* line 29, ../sass/partials/_header.scss */
+  .logo {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 35, ../sass/partials/_header.scss */
+  .logo {
+    padding-left: 0px;
+  }
+}
+/* line 14, ../sass/partials/_base.scss */
+body {
+  background-color: #f3f3f3;
+  width: 1600px;
+}

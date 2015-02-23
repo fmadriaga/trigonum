@@ -1,10 +1,17 @@
 // Use Compass ('cause it rocks!)
 @import "compass";
 
-#lista{background-color:blue;}
+@import "reset";
 @import "modules/all";
 @import "buttons";
 @import "figures";
 @import "grids";
-@import "reset";
 @import "typography";
+@import "normalize";
+@import "header";
+
+
+body{
+	background-color:$fondo;
+	width:1600px;
+}
