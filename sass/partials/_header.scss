@@ -1,6 +1,6 @@
 .encabezado{
-	width:1600px;
-	display:inline;
+	height:400px;
+	background-color:green;
 	
 	.logo{
 		padding-left:214px;
@@ -8,31 +8,39 @@
 
 	nav{
 		float:right;
+		padding-right:214px;
 
 		.main-menu{
 
-			li{
+			li {
 				display:inline;
+				margin-left:20px;
+
+				color:white;
+				font-size:14px;
+				font-weight:700;
+				text-transform: uppercase;
 			}
 		}
 	}
 
-}
-
-@media #{$desktop} {
-	.logo{
-		padding-left:150px;
+	.image-header{
+		margin: 0px auto;
 	}
-}
 
-@media #{$tablet} {
-	.logo{
-		padding-left:50px;
+	.see-why{
+		margin:0px auto;
+		
+		&:after{
+			content: "";
+			margin-bottom: 10px;
+			border-width: 10px 10px 0px;
+			border-style: solid;
+			border-color: $rojo transparent;
+			display: block;
+			width: 0;
+		}
 	}
-}
+	
 
-@media #{$smartphone} {
-	.logo{
-		padding-left:0px;
-	}
 }
